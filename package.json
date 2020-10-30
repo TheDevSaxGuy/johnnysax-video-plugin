@@ -1,16 +1,23 @@
 {
-  "name": "platzi-media-player",
+  "name": "JohnnySax-media-player",
   "version": "1.0.0",
   "description": "Proyecto del Curso Profesional de JavaScript de la Escuela de JavaScript de Platzi.",
   "license": "MIT",
-  "author": "Richard B. Kaufman López <richardbkaufman@gmail.com>",
+  "author": "Juan Antonio Ortiz <juanitortz97@gmail.com>",
   "keywords": [
-    "platzi"
+    "javascript"
   ],
   "scripts": {
-    "start": "live-server"
+    "start": "parcel index.html ejercicios/index.html ejercicios/**/*.html"
   },
   "devDependencies": {
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "typescript": "^4.0.5"
+  },
+  "browserslist": [
+    "last 1 chrome version"
+  ],
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
   }
 }
