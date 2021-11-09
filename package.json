@@ -1,5 +1,5 @@
 {
-  "name": "JohnnySax-media-player",
+  "name": "johnnysax-media-player",
   "version": "1.0.0",
   "description": "Proyecto del Curso Profesional de JavaScript de la Escuela de JavaScript de Platzi.",
   "license": "MIT",
@@ -8,10 +8,15 @@
     "javascript"
   ],
   "scripts": {
-    "start": "parcel index.html ejercicios/index.html ejercicios/**/*.html",
-    "dev": "parcel index.html"
+    "start": "parcel index.html",
+    "prebuild-dev": "shx rm -rf dist/*",
+    "build-dev": "parcel build index.html --no-minify --public-url ./",
+    "prebuild": "shx rm -rf dist/*",
+    "build": "parcel build ./index.html --public-url ./",
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   },
   "devDependencies": {
+    "shx": "^0.3.2",
     "live-server": "^1.2.1",
     "typescript": "^4.0.5"
   },
@@ -20,5 +25,14 @@
   ],
   "dependencies": {
     "parcel-bundler": "^1.12.4"
-  }
+  },
+  "main": "dist/index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheDevSaxGuy/johnnysax-video-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TheDevSaxGuy/johnnysax-video-plugin/issues"
+  },
+  "homepage": "https://github.com/TheDevSaxGuy/johnnysax-video-plugin#readme"
 }
