@@ -26,7 +26,22 @@ header > h1 {
 main {
   padding: 1rem 0;
 }
-
+section{
+  padding: 0 1rem;
+}
+.footer{
+  background-color: black;
+  color: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  }
+.footer img{
+  width: 20px;
+  vertical-align: middle;
+}
 .container {
   max-width: 960px;
   width: 100%;

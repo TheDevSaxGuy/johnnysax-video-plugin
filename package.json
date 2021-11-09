@@ -8,7 +8,8 @@
     "javascript"
   ],
   "scripts": {
-    "start": "parcel index.html ejercicios/index.html ejercicios/**/*.html"
+    "start": "parcel index.html ejercicios/index.html ejercicios/**/*.html",
+    "dev": "parcel index.html"
   },
   "devDependencies": {
     "live-server": "^1.2.1",
